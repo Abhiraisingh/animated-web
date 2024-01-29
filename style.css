@@ -138,5 +138,6 @@ border-top-right-radius: 30px;
       .feature-img.anim{
         height: 70vh;
         width: 50vw;
+        position: absolute;
       }
 }
