@@ -17,21 +17,22 @@
 }
 
 nav{
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 2px solid #dadada;
 }
 
 .logo{
-    width: 140px;
+    width: 120px;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
     color: #333;
-    padding: 10px 15px;
+    padding: 1vw 2vw;
 }
 
 nav ul li a{
@@ -44,28 +45,28 @@ nav ul li a{
     text-decoration: none;
     color: #333;
     font-weight: 400;
-    padding-right: 15px;
+    padding-right: 2vw;
 }
 
 .btn{
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    padding: 14px 40px;
+    padding: 15px 40px;
     background-image: linear-gradient(45deg, #df4881, #c430d7);
     border-radius: 30px;
     border-top-right-radius: 0;
-    font-size: 14px;
+    font-size: 1.2vw;
     transition: 0.5s;
 }
 
 .content{
-    margin-top: 10%;
-    max-width: 600px;
+    margin-top: 5%;
+    max-width: 30%;
 }
 
 .content h1{
-    font-size: 70px;
+    font-size: 5vw;
     color: #222;
 }
 
@@ -76,8 +77,8 @@ nav ul li a{
 }
 
 .content .btn{
-    padding: 15px 80px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 15px;
     animation-delay: 1s;
 }
 
@@ -86,9 +87,9 @@ border-top-right-radius: 30px;
 }
 
 .feature-img{
-    width: 530px;
+    width: 56vh;
     position: absolute;
-    right: 10%;
+    right: 8vw;
     bottom: 0;
 }
 
@@ -107,4 +108,35 @@ border-top-right-radius: 30px;
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+@media (max-width: 600px) {
+    nav li{
+         align-items: center;
+         padding: 20px 20px;
+         font-size: 4vw;
+      } 
+
+      nav .btn{
+             font-size: 2vw;
+             margin: 2vw;
+      }
+
+      nav .log-in{
+        font-size: 4vw;
+        margin: 2vw;
+      }
+
+    .anim{
+        font-size: 4vw;
+      }
+
+      .content h1{
+        font-size: 8vw;
+      }
+
+      .feature-img.anim{
+        height: 70vh;
+        width: 50vw;
+      }
 }
